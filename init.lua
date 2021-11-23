@@ -11,6 +11,7 @@ require('lsp/python-lsp')
 require('lsp/bash-lsp')
 require('lsp/lsp-config')
 require('compe-config')
+
 -- Basic Settings
 
 local set = vim.opt
