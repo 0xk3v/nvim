@@ -79,6 +79,16 @@ _G.packer_plugins = {
     path = "/home/mint/.local/share/nvim/site/pack/packer/start/coc.nvim",
     url = "https://github.com/neoclide/coc.nvim"
   },
+  ["indentpython.vim"] = {
+    loaded = true,
+    path = "/home/mint/.local/share/nvim/site/pack/packer/start/indentpython.vim",
+    url = "https://github.com/vim-scripts/indentpython.vim"
+  },
+  neoterm = {
+    loaded = true,
+    path = "/home/mint/.local/share/nvim/site/pack/packer/start/neoterm",
+    url = "https://github.com/kassio/neoterm"
+  },
   ["nvim-tree.lua"] = {
     config = { "\27LJ\2\2;\0\0\2\0\3\0\a6\0\0\0'\1\1\0B\0\2\0029\0\2\0004\1\0\0B\0\2\1K\0\1\0\nsetup\14nvim-tree\frequire\0" },
     loaded = true,
@@ -110,6 +120,11 @@ _G.packer_plugins = {
     loaded = true,
     path = "/home/mint/.local/share/nvim/site/pack/packer/start/python-mode",
     url = "https://github.com/python-mode/python-mode"
+  },
+  semshi = {
+    loaded = true,
+    path = "/home/mint/.local/share/nvim/site/pack/packer/start/semshi",
+    url = "https://github.com/numirias/semshi"
   },
   ["typescript-vim"] = {
     loaded = true,
@@ -155,6 +170,11 @@ _G.packer_plugins = {
     loaded = true,
     path = "/home/mint/.local/share/nvim/site/pack/packer/start/vim-jsx-typescript",
     url = "https://github.com/peitalin/vim-jsx-typescript"
+  },
+  ["vim-polyglot"] = {
+    loaded = true,
+    path = "/home/mint/.local/share/nvim/site/pack/packer/start/vim-polyglot",
+    url = "https://github.com/sheerun/vim-polyglot"
   },
   ["vim-prettier"] = {
     loaded = true,

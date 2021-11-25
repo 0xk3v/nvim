@@ -4,19 +4,11 @@ require('plugins')
 require('nvim-tree')
 require('barbar')
 require('keymappings')
+require('opts')
 
--- Basic Settings
+-- Vim-Script Configs
 
-local set = vim.opt
-set.showmode = false
-set.showtabline = 2
-set.mouse = 'a'
-set.termguicolors = true
-set.tabstop = 4
-set.softtabstop = 4
+-- vim.cmd 'source ~/.config/nvim/vim-scripts/coc-config.vim'
 
-vim.wo.number = true
-vim.o.background = 'dark'
+-- Theme Settings
 vim.g.colors_name = 'palenight'
-
-

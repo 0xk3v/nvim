@@ -1,7 +1,7 @@
 local execute = vim.api.nvim_command
 local fn = vim.fn
 
--- local install_path = fn.stdpath('data')..'/site/pack/packer/start/packer.nvim'
+--local install_path = fn.stdpath('data')..'/site/pack/packer/start/packer.nvim'
 --[[
 if fn.empty(fn.glob(install_path)) > 0 then
   execute('!git clone https://github.com/wbthomason/packer.nvim '..install_path)
@@ -39,8 +39,6 @@ return require('packer').startup(function()
   use 'tpope/vim-commentary'
   use 'honza/vim-snippets'
   
-  use {'python-mode/python-mode',  branch = 'develop' }
-
   -- AirLine 
   
   use 'vim-airline/vim-airline'
@@ -59,5 +57,18 @@ return require('packer').startup(function()
   -- COC Support
   
   use {'neoclide/coc.nvim', branch = 'release'}
+
+  -- Python Support
+
+  use 'numirias/semshi'
+  use {'python-mode/python-mode',  branch = 'develop' }
+  use 'sheerun/vim-polyglot'
+  use 'vim-scripts/indentpython.vim'
+
+
+  -- Terminal Support
+
+  use 'kassio/neoterm'
+
 end)
 
