@@ -46,8 +46,8 @@ return require('packer').startup(function()
   use 'vim-airline/vim-airline-themes'
   use 'ryanoasis/vim-devicons'
   use 'kyazdani42/nvim-web-devicons'
-
-  -- LSP Installation
+ 
+  --[[ LSP Installation
 
   use {
       'neovim/nvim-lspconfig',
@@ -68,6 +68,7 @@ return require('packer').startup(function()
   use 'jose-elias-alvarez/null-ls.nvim'
   use 'Shougo/deoplete.nvim'
   use 'Shougo/deoplete-lsp'
+  ]]
 
   use 'pangloss/vim-javascript'
   use 'leafgarland/typescript-vim'
