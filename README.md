@@ -11,11 +11,6 @@ This is My Nvim Config Files
 │   ├── barbar.lua
 │   ├── compe-config.lua
 │   ├── keymappings.lua
-│   ├── lsp
-│   │   ├── bash-lsp.lua
-│   │   ├── lsp-config.lua
-│   │   ├── nvim-cmp.lua
-│   │   └── python-lsp.lua
 │   └── plugins.lua
 ├── plugin
 │   └── packer_compiled.lua
