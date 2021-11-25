@@ -5,15 +5,6 @@ require('nvim-tree')
 require('barbar')
 require('keymappings')
 
---[[ LSP Configurations
-
-require('lsp/python-lsp')
-require('lsp/bash-lsp')
-require('lsp/lsp-config')
-require('lsp/ts-lsp')
-require('compe-config')
-]]
-
 -- Basic Settings
 
 local set = vim.opt
