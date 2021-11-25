@@ -69,6 +69,16 @@ end
 time([[try_loadstring definition]], false)
 time([[Defining packer_plugins]], true)
 _G.packer_plugins = {
+  ["LanguageClient-neovim"] = {
+    loaded = true,
+    path = "/home/mint/.local/share/nvim/site/pack/packer/start/LanguageClient-neovim",
+    url = "https://github.com/autozimu/LanguageClient-neovim"
+  },
+  ["auto-pairs"] = {
+    loaded = true,
+    path = "/home/mint/.local/share/nvim/site/pack/packer/start/auto-pairs",
+    url = "https://github.com/jiangmiao/auto-pairs"
+  },
   ["barbar.nvim"] = {
     loaded = true,
     path = "/home/mint/.local/share/nvim/site/pack/packer/start/barbar.nvim",
@@ -166,6 +176,16 @@ _G.packer_plugins = {
     path = "/home/mint/.local/share/nvim/site/pack/packer/start/vim-javascript",
     url = "https://github.com/pangloss/vim-javascript"
   },
+  ["vim-javascript-syntax"] = {
+    loaded = true,
+    path = "/home/mint/.local/share/nvim/site/pack/packer/start/vim-javascript-syntax",
+    url = "https://github.com/jelera/vim-javascript-syntax"
+  },
+  ["vim-jsx"] = {
+    loaded = true,
+    path = "/home/mint/.local/share/nvim/site/pack/packer/start/vim-jsx",
+    url = "https://github.com/mxw/vim-jsx"
+  },
   ["vim-jsx-typescript"] = {
     loaded = true,
     path = "/home/mint/.local/share/nvim/site/pack/packer/start/vim-jsx-typescript",
@@ -190,6 +210,11 @@ _G.packer_plugins = {
     loaded = true,
     path = "/home/mint/.local/share/nvim/site/pack/packer/start/vim-styled-components",
     url = "https://github.com/styled-components/vim-styled-components"
+  },
+  ["yajs.vim"] = {
+    loaded = true,
+    path = "/home/mint/.local/share/nvim/site/pack/packer/start/yajs.vim",
+    url = "https://github.com/othree/yajs.vim"
   }
 }
 

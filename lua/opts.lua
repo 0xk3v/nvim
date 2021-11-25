@@ -1,4 +1,7 @@
 
+-- Language Linting
+
+
 local set = vim.opt
 set.showmode = false
 set.showtabline = 2

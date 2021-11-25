@@ -2,8 +2,9 @@ local execute = vim.api.nvim_command
 local fn = vim.fn
 
 --local install_path = fn.stdpath('data')..'/site/pack/packer/start/packer.nvim'
+
 --[[
-if fn.empty(fn.glob(install_path)) > 0 then
+i             f fn.empty(fn.glob(install_path)) > 0 then
   execute('!git clone https://github.com/wbthomason/packer.nvim '..install_path)
   execute 'packadd packer.nvim'
 end
@@ -11,7 +12,8 @@ end
 
 -- This file can be loaded by calling `lua require('plugins')` from your init.vim
 
-return require('packer').startup(function()
+  return require('packer').startup(function()
+  
   -- Packer can manage itself
   use {'wbthomason/packer.nvim', opt = true}
 
@@ -49,11 +51,15 @@ return require('packer').startup(function()
   -- Javascript Support
 
   use 'pangloss/vim-javascript'
+  use 'jelera/vim-javascript-syntax'
   use 'leafgarland/typescript-vim'
   use 'peitalin/vim-jsx-typescript'
+  use 'mxw/vim-jsx'
   use  {'styled-components/vim-styled-components', branch = 'main'}
   use 'jparise/vim-graphql' 
-
+  use 'othree/yajs.vim'
+  use {'autozimu/LanguageClient-neovim', branch = 'next', run = 'bash install.sh'}
+  use 'dense-analysis/ale' 
   -- COC Support
   
   use {'neoclide/coc.nvim', branch = 'release'}
@@ -65,10 +71,13 @@ return require('packer').startup(function()
   use 'sheerun/vim-polyglot'
   use 'vim-scripts/indentpython.vim'
 
+  -- Cool Plugins
+
+  use 'jiangmiao/auto-pairs'
+  use 'tpope/vim-commentary'
 
   -- Terminal Support
 
   use 'kassio/neoterm'
 
 end)
-
