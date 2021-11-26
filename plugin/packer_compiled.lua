@@ -74,6 +74,11 @@ _G.packer_plugins = {
     path = "/home/mint/.local/share/nvim/site/pack/packer/start/LanguageClient-neovim",
     url = "https://github.com/autozimu/LanguageClient-neovim"
   },
+  ale = {
+    loaded = true,
+    path = "/home/mint/.local/share/nvim/site/pack/packer/start/ale",
+    url = "https://github.com/dense-analysis/ale"
+  },
   ["auto-pairs"] = {
     loaded = true,
     path = "/home/mint/.local/share/nvim/site/pack/packer/start/auto-pairs",
@@ -88,6 +93,11 @@ _G.packer_plugins = {
     loaded = true,
     path = "/home/mint/.local/share/nvim/site/pack/packer/start/coc.nvim",
     url = "https://github.com/neoclide/coc.nvim"
+  },
+  ["html5.vim"] = {
+    loaded = true,
+    path = "/home/mint/.local/share/nvim/site/pack/packer/start/html5.vim",
+    url = "https://github.com/othree/html5.vim"
   },
   ["indentpython.vim"] = {
     loaded = true,
@@ -131,10 +141,20 @@ _G.packer_plugins = {
     path = "/home/mint/.local/share/nvim/site/pack/packer/start/python-mode",
     url = "https://github.com/python-mode/python-mode"
   },
+  ["scss-syntax.vim"] = {
+    loaded = true,
+    path = "/home/mint/.local/share/nvim/site/pack/packer/start/scss-syntax.vim",
+    url = "https://github.com/cakebaker/scss-syntax.vim"
+  },
   semshi = {
     loaded = true,
     path = "/home/mint/.local/share/nvim/site/pack/packer/start/semshi",
     url = "https://github.com/numirias/semshi"
+  },
+  syntastic = {
+    loaded = true,
+    path = "/home/mint/.local/share/nvim/site/pack/packer/start/syntastic",
+    url = "https://github.com/vim-syntastic/syntastic"
   },
   ["typescript-vim"] = {
     loaded = true,
@@ -185,6 +205,11 @@ _G.packer_plugins = {
     loaded = true,
     path = "/home/mint/.local/share/nvim/site/pack/packer/start/vim-jsx",
     url = "https://github.com/mxw/vim-jsx"
+  },
+  ["vim-jsx-pretty"] = {
+    loaded = true,
+    path = "/home/mint/.local/share/nvim/site/pack/packer/start/vim-jsx-pretty",
+    url = "https://github.com/maxmellon/vim-jsx-pretty"
   },
   ["vim-jsx-typescript"] = {
     loaded = true,
