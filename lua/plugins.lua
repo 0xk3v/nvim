@@ -1,7 +1,7 @@
 local execute = vim.api.nvim_command
 local fn = vim.fn
 
---local install_path = fn.stdpath('data')..'/site/pack/packer/start/packer.nvim'
+-- local install_path = fn.stdpath('data')..'/site/pack/packer/start/packer.nvim'
 
 --[[
 if fn.empty(fn.glob(install_path)) > 0 then
@@ -19,7 +19,7 @@ end
 
   -- Main Theme
   use 'drewtempelmeyer/palenight.vim'
-  
+
   -- Nvim Tree Lua 
   use {
     'kyazdani42/nvim-tree.lua',
@@ -34,11 +34,8 @@ end
   }
 
   use 'nvim-treesitter/nvim-treesitter'
-  
   use {'prettier/vim-prettier', run = 'yarn install' }
-  
   use '9mm/vim-closer'
-  use 'tpope/vim-commentary'
   use 'honza/vim-snippets'
   
   -- AirLine 
@@ -62,8 +59,14 @@ end
   use 'dense-analysis/ale'
   use 'vim-syntastic/syntastic'
   use 'maxmellon/vim-jsx-pretty'
+
+  -- HTML & CSS Support
+
   use 'othree/html5.vim'
   use 'cakebaker/scss-syntax.vim'
+  use 'mattn/emmet-vim'
+  use 'hail2u/vim-css3-syntax'
+  use 'gko/vim-coloresque'
 
   -- COC Support
   

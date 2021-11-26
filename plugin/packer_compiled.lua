@@ -94,6 +94,11 @@ _G.packer_plugins = {
     path = "/home/mint/.local/share/nvim/site/pack/packer/start/coc.nvim",
     url = "https://github.com/neoclide/coc.nvim"
   },
+  ["emmet-vim"] = {
+    loaded = true,
+    path = "/home/mint/.local/share/nvim/site/pack/packer/start/emmet-vim",
+    url = "https://github.com/mattn/emmet-vim"
+  },
   ["html5.vim"] = {
     loaded = true,
     path = "/home/mint/.local/share/nvim/site/pack/packer/start/html5.vim",
@@ -176,10 +181,20 @@ _G.packer_plugins = {
     path = "/home/mint/.local/share/nvim/site/pack/packer/start/vim-closer",
     url = "https://github.com/9mm/vim-closer"
   },
+  ["vim-coloresque"] = {
+    loaded = true,
+    path = "/home/mint/.local/share/nvim/site/pack/packer/start/vim-coloresque",
+    url = "https://github.com/gko/vim-coloresque"
+  },
   ["vim-commentary"] = {
     loaded = true,
     path = "/home/mint/.local/share/nvim/site/pack/packer/start/vim-commentary",
     url = "https://github.com/tpope/vim-commentary"
+  },
+  ["vim-css3-syntax"] = {
+    loaded = true,
+    path = "/home/mint/.local/share/nvim/site/pack/packer/start/vim-css3-syntax",
+    url = "https://github.com/hail2u/vim-css3-syntax"
   },
   ["vim-devicons"] = {
     loaded = true,
