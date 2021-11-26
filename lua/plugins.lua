@@ -19,6 +19,7 @@ end
 
   -- Main Theme
   use 'drewtempelmeyer/palenight.vim'
+  use 'pacokwon/onedarkhc.vim'
 
   -- Nvim Tree Lua 
   use {

@@ -130,6 +130,11 @@ _G.packer_plugins = {
     path = "/home/mint/.local/share/nvim/site/pack/packer/start/nvim-web-devicons",
     url = "https://github.com/kyazdani42/nvim-web-devicons"
   },
+  ["onedarkhc.vim"] = {
+    loaded = true,
+    path = "/home/mint/.local/share/nvim/site/pack/packer/start/onedarkhc.vim",
+    url = "https://github.com/pacokwon/onedarkhc.vim"
+  },
   ["packer.nvim"] = {
     loaded = false,
     needs_bufread = false,
