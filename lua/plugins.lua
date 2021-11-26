@@ -61,6 +61,10 @@ end
   use {'autozimu/LanguageClient-neovim', branch = 'next', run = 'bash install.sh'}
   use 'dense-analysis/ale'
   use 'vim-syntastic/syntastic'
+  use 'maxmellon/vim-jsx-pretty'
+  use 'maxmellon/vim-jsx-pretty'
+  use 'othree/html5.vim'
+  use 'cakebaker/scss-syntax.vim'
 
   -- COC Support
   
