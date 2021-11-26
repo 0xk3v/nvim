@@ -4,7 +4,7 @@ local fn = vim.fn
 --local install_path = fn.stdpath('data')..'/site/pack/packer/start/packer.nvim'
 
 --[[
-i             f fn.empty(fn.glob(install_path)) > 0 then
+if fn.empty(fn.glob(install_path)) > 0 then
   execute('!git clone https://github.com/wbthomason/packer.nvim '..install_path)
   execute 'packadd packer.nvim'
 end
@@ -62,7 +62,6 @@ end
   use 'dense-analysis/ale'
   use 'vim-syntastic/syntastic'
   use 'maxmellon/vim-jsx-pretty'
-  use 'maxmellon/vim-jsx-pretty'
   use 'othree/html5.vim'
   use 'cakebaker/scss-syntax.vim'
 
@@ -85,5 +84,6 @@ end
   -- Terminal Support
 
   use 'kassio/neoterm'
+  use 'airblade/vim-rooter'
 
 end)

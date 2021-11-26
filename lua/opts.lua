@@ -18,3 +18,9 @@ vim.o.background = 'dark'
 -- ESLint Configs
 
 vim.cmd "let b:ale_fixers = {'javascript': ['prettier', 'eslint']}"
+
+-- Ultisnips Configs
+
+vim.cmd 'let g:UltiSnipsExpandTrigger="<tab>"'
+vim.cmd 'let g:UltiSnipsJumpForwardTrigger="<c-b>"'
+vim.cmd 'let g:UltiSnipsJumpBackwardTrigger="<c-z>"'
