@@ -3,6 +3,7 @@
 
 
 local set = vim.opt
+
 set.showmode = false
 set.showtabline = 2
 set.mouse = 'a'
@@ -14,3 +15,6 @@ set.splitright = true
 vim.wo.number = true
 vim.o.background = 'dark'
 
+-- ESLint Configs
+
+vim.cmd "let b:ale_fixers = {'javascript': ['prettier', 'eslint']}"

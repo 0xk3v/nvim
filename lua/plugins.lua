@@ -59,7 +59,9 @@ end
   use 'jparise/vim-graphql' 
   use 'othree/yajs.vim'
   use {'autozimu/LanguageClient-neovim', branch = 'next', run = 'bash install.sh'}
-  use 'dense-analysis/ale' 
+  use 'dense-analysis/ale'
+  use 'vim-syntastic/syntastic'
+
   -- COC Support
   
   use {'neoclide/coc.nvim', branch = 'release'}
