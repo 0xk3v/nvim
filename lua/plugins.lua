@@ -86,8 +86,15 @@ end
   use 'tpope/vim-commentary'
 
   -- Terminal Support
+  
+  use {
+      's1n7ax/nvim-terminal',
+      config = function()
+          vim.o.hidden = true
+          require('nvim-terminal').setup()
+      end,
+  }
 
-  use 'kassio/neoterm'
   use 'airblade/vim-rooter'
 
 end)
