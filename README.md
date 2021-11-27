@@ -13,9 +13,9 @@ This is My Nvim Config Files that is written in Lua.
 │   ├── compe-config.lua
 │   ├── keymappings.lua
 │   ├── opts.lua
-│   └── plugins.lua
+│   ├── plugins.lua
+│   └── term-config.lua
 ├── plugin
 │   └── packer_compiled.lua
 └── README.md
-
 ```
