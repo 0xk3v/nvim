@@ -9,4 +9,3 @@ require('term-config')
 
 -- Theme Settings
 vim.g.colors_name = 'palenight'
-
