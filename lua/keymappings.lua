@@ -25,10 +25,10 @@ vim.cmd 'nnoremap <C-J> <C-W><C-J>'
 vim.cmd 'nnoremap <C-K> <C-W><C-K>'
 vim.cmd 'nnoremap <C-L> <C-W><C-L>'
 vim.cmd 'nnoremap <C-H> <C-W><C-H>'
---]]
 
 vim.cmd 'source ~/.config/nvim/lua/coc-config.vim'
 
+--]]
 --[[
 vim.api.nvim_set_keymap('n', '<C-t>', ':lua NTGlobal["terminal"]:toggle()<cr>', default_opts)
 vim.api.nvim_set_keymap('n', '<leader>1', ':lua NTGlobal["terminal"]:open(1)<cr>', default_opts)
@@ -43,3 +43,4 @@ vim.api.nvim_set_keymap('n', '<C-t>', ':lua terminal:toggle()<cr>', silent)
 vim.api.nvim_set_keymap('n', '<C-1>', ':lua terminal:open(1)<cr>', silent)
 vim.api.nvim_set_keymap('n', '<C-2>', ':lua terminal:open(2)<cr>', silent)
 vim.api.nvim_set_keymap('n', '<C-3>', ':lua terminal:open(3)<cr>', silent)
+
