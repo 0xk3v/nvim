@@ -25,6 +25,9 @@ vim.cmd 'nnoremap <C-J> <C-W><C-J>'
 vim.cmd 'nnoremap <C-K> <C-W><C-K>'
 vim.cmd 'nnoremap <C-L> <C-W><C-L>'
 vim.cmd 'nnoremap <C-H> <C-W><C-H>'
+
+vim.cmd 'source ~/.config/nvim/lua/coc-config.vim'
+
 --]]
 --[[
 vim.api.nvim_set_keymap('n', '<C-t>', ':lua NTGlobal["terminal"]:toggle()<cr>', default_opts)
