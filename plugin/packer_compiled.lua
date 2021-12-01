@@ -69,7 +69,6 @@ end
 time([[try_loadstring definition]], false)
 time([[Defining packer_plugins]], true)
 _G.packer_plugins = {
-<<<<<<< HEAD
   ["LanguageClient-neovim"] = {
     loaded = true,
     path = "/home/mint/.local/share/nvim/site/pack/packer/start/LanguageClient-neovim",
@@ -85,14 +84,11 @@ _G.packer_plugins = {
     path = "/home/mint/.local/share/nvim/site/pack/packer/start/auto-pairs",
     url = "https://github.com/jiangmiao/auto-pairs"
   },
-=======
->>>>>>> main
   ["barbar.nvim"] = {
     loaded = true,
     path = "/home/mint/.local/share/nvim/site/pack/packer/start/barbar.nvim",
     url = "https://github.com/romgrk/barbar.nvim"
   },
-<<<<<<< HEAD
   ["coc.nvim"] = {
     loaded = true,
     path = "/home/mint/.local/share/nvim/site/pack/packer/start/coc.nvim",
@@ -118,8 +114,6 @@ _G.packer_plugins = {
     path = "/home/mint/.local/share/nvim/site/pack/packer/start/neoterm",
     url = "https://github.com/kassio/neoterm"
   },
-=======
->>>>>>> main
   ["nvim-tree.lua"] = {
     config = { "\27LJ\2\2;\0\0\2\0\3\0\a6\0\0\0'\1\1\0B\0\2\0029\0\2\0004\1\0\0B\0\2\1K\0\1\0\nsetup\14nvim-tree\frequire\0" },
     loaded = true,
@@ -136,14 +130,11 @@ _G.packer_plugins = {
     path = "/home/mint/.local/share/nvim/site/pack/packer/start/nvim-web-devicons",
     url = "https://github.com/kyazdani42/nvim-web-devicons"
   },
-<<<<<<< HEAD
   ["onedarkhc.vim"] = {
     loaded = true,
     path = "/home/mint/.local/share/nvim/site/pack/packer/start/onedarkhc.vim",
     url = "https://github.com/pacokwon/onedarkhc.vim"
   },
-=======
->>>>>>> main
   ["packer.nvim"] = {
     loaded = false,
     needs_bufread = false,
@@ -160,7 +151,6 @@ _G.packer_plugins = {
     path = "/home/mint/.local/share/nvim/site/pack/packer/start/python-mode",
     url = "https://github.com/python-mode/python-mode"
   },
-<<<<<<< HEAD
   ["scss-syntax.vim"] = {
     loaded = true,
     path = "/home/mint/.local/share/nvim/site/pack/packer/start/scss-syntax.vim",
@@ -176,8 +166,6 @@ _G.packer_plugins = {
     path = "/home/mint/.local/share/nvim/site/pack/packer/start/syntastic",
     url = "https://github.com/vim-syntastic/syntastic"
   },
-=======
->>>>>>> main
   ["typescript-vim"] = {
     loaded = true,
     path = "/home/mint/.local/share/nvim/site/pack/packer/start/typescript-vim",
@@ -198,27 +186,21 @@ _G.packer_plugins = {
     path = "/home/mint/.local/share/nvim/site/pack/packer/start/vim-closer",
     url = "https://github.com/9mm/vim-closer"
   },
-<<<<<<< HEAD
   ["vim-coloresque"] = {
     loaded = true,
     path = "/home/mint/.local/share/nvim/site/pack/packer/start/vim-coloresque",
     url = "https://github.com/gko/vim-coloresque"
   },
-=======
->>>>>>> main
   ["vim-commentary"] = {
     loaded = true,
     path = "/home/mint/.local/share/nvim/site/pack/packer/start/vim-commentary",
     url = "https://github.com/tpope/vim-commentary"
   },
-<<<<<<< HEAD
   ["vim-css3-syntax"] = {
     loaded = true,
     path = "/home/mint/.local/share/nvim/site/pack/packer/start/vim-css3-syntax",
     url = "https://github.com/hail2u/vim-css3-syntax"
   },
-=======
->>>>>>> main
   ["vim-devicons"] = {
     loaded = true,
     path = "/home/mint/.local/share/nvim/site/pack/packer/start/vim-devicons",
@@ -234,7 +216,6 @@ _G.packer_plugins = {
     path = "/home/mint/.local/share/nvim/site/pack/packer/start/vim-javascript",
     url = "https://github.com/pangloss/vim-javascript"
   },
-<<<<<<< HEAD
   ["vim-javascript-syntax"] = {
     loaded = true,
     path = "/home/mint/.local/share/nvim/site/pack/packer/start/vim-javascript-syntax",
@@ -250,34 +231,26 @@ _G.packer_plugins = {
     path = "/home/mint/.local/share/nvim/site/pack/packer/start/vim-jsx-pretty",
     url = "https://github.com/maxmellon/vim-jsx-pretty"
   },
-=======
->>>>>>> main
   ["vim-jsx-typescript"] = {
     loaded = true,
     path = "/home/mint/.local/share/nvim/site/pack/packer/start/vim-jsx-typescript",
     url = "https://github.com/peitalin/vim-jsx-typescript"
   },
-<<<<<<< HEAD
   ["vim-polyglot"] = {
     loaded = true,
     path = "/home/mint/.local/share/nvim/site/pack/packer/start/vim-polyglot",
     url = "https://github.com/sheerun/vim-polyglot"
   },
-=======
->>>>>>> main
   ["vim-prettier"] = {
     loaded = true,
     path = "/home/mint/.local/share/nvim/site/pack/packer/start/vim-prettier",
     url = "https://github.com/prettier/vim-prettier"
   },
-<<<<<<< HEAD
   ["vim-rooter"] = {
     loaded = true,
     path = "/home/mint/.local/share/nvim/site/pack/packer/start/vim-rooter",
     url = "https://github.com/airblade/vim-rooter"
   },
-=======
->>>>>>> main
   ["vim-snippets"] = {
     loaded = true,
     path = "/home/mint/.local/share/nvim/site/pack/packer/start/vim-snippets",
@@ -287,14 +260,11 @@ _G.packer_plugins = {
     loaded = true,
     path = "/home/mint/.local/share/nvim/site/pack/packer/start/vim-styled-components",
     url = "https://github.com/styled-components/vim-styled-components"
-<<<<<<< HEAD
   },
   ["yajs.vim"] = {
     loaded = true,
     path = "/home/mint/.local/share/nvim/site/pack/packer/start/yajs.vim",
     url = "https://github.com/othree/yajs.vim"
-=======
->>>>>>> main
   }
 }
 
