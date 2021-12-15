@@ -97,4 +97,10 @@ end
 
   use 'airblade/vim-rooter'
 
+  -- C# Support
+  
+  use 'OmniSharp/omnisharp-vim'
+  use 'liuchengxu/vim-clap'
+
+
 end)
