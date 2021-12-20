@@ -1,9 +1,9 @@
 local execute = vim.api.nvim_command
 local fn = vim.fn
 
--- local install_path = fn.stdpath('data')..'/site/pack/packer/start/packer.nvim'
+local install_path = fn.stdpath('data')..'/site/pack/packer/start/packer.nvim'
 
---[[
+---[[
 if fn.empty(fn.glob(install_path)) > 0 then
   execute('!git clone https://github.com/wbthomason/packer.nvim '..install_path)
   execute 'packadd packer.nvim'
@@ -20,6 +20,7 @@ end
   -- Main Theme
   use 'drewtempelmeyer/palenight.vim'
   use 'kadekillary/skull-vim'
+  -- use 'kaicataldo/material.vim'
 
   -- Nvim Tree Lua 
   use {
@@ -68,6 +69,7 @@ end
   use 'mattn/emmet-vim'
   use 'hail2u/vim-css3-syntax'
   use 'gko/vim-coloresque'
+  use 'AndrewRadev/tagalong.vim'
 
   -- COC Support
   
@@ -84,6 +86,7 @@ end
 
   use 'jiangmiao/auto-pairs'
   use 'tpope/vim-commentary'
+  use 'Shougo/deoplete.nvim'
 
   -- Terminal Support
   
@@ -101,6 +104,13 @@ end
   
   use 'OmniSharp/omnisharp-vim'
   use 'liuchengxu/vim-clap'
-
-
+  
+  -- Dashboard
+  use {
+    'goolord/alpha-nvim',
+    config = function ()
+        require'alpha'.setup(require'alpha.themes.dashboard'.opts)
+    end
+  }
+  use 'glepnir/dashboard-nvim'
 end)

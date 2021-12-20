@@ -14,6 +14,8 @@ set.splitbelow = true
 set.splitright = true
 vim.wo.number = true
 vim.o.background = 'dark'
+vim.cmd 'set cursorline'
+
 
 -- ESLint Configs
 
@@ -24,3 +26,4 @@ vim.cmd "let b:ale_fixers = {'javascript': ['prettier', 'eslint']}"
 vim.cmd 'let g:UltiSnipsExpandTrigger="<tab>"'
 vim.cmd 'let g:UltiSnipsJumpForwardTrigger="<c-b>"'
 vim.cmd 'let g:UltiSnipsJumpBackwardTrigger="<c-z>"'
+
