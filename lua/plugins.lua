@@ -61,7 +61,7 @@ end
   use 'dense-analysis/ale'
   use 'vim-syntastic/syntastic'
   use 'maxmellon/vim-jsx-pretty'
-
+  use 'chemzqm/vim-jsx-improve'
   -- HTML & CSS Support
 
   use 'othree/html5.vim'
