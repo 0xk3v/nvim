@@ -13,10 +13,12 @@
   "diagnostic.errorSign": "",
   "diagnostic.warningSign": "",
   "diagnostic.infoSign": "",
+  "diagnostic.hintSign": "",
+  "diagnostic.showUnused": true,
   "coc.source.OmniSharp.enable": true,
   "coc.source.OmniSharp.filetypes": ["cs"],
   "omnisharp.version": "v1.37.3",
   "omnisharp.trace.server": "information",
   "omnisharp.debug.server": true,
-  "Lua.diagnostics.globals": ["vim"]
+  "Lua.diagnostics.globals": ["vim", "use"]
 }
