@@ -29,12 +29,6 @@ end
     config = function() require'nvim-tree'.setup {} end
   }
 
-  -- BarBar
-  --[[ use {
-    'romgrk/barbar.nvim',
-    requires = {'kyazdani42/nvim-web-devicons'}
-  }]]
-
   -- using packer.nvim
   use {'akinsho/bufferline.nvim', requires = 'kyazdani42/nvim-web-devicons'}
 
@@ -95,15 +89,7 @@ end
   use 'Shougo/deoplete.nvim'
 
   -- Terminal Support
-
-  use {
-      's1n7ax/nvim-terminal',
-      config = function()
-          vim.o.hidden = true
-          require('nvim-terminal').setup()
-      end,
-  }
-
+  use {"akinsho/toggleterm.nvim"}
   use 'airblade/vim-rooter'
 
   -- C# Support
@@ -119,4 +105,16 @@ end
     end
   }
   use 'glepnir/dashboard-nvim'
+
+  -- Git Support
+  use {
+    'lewis6991/gitsigns.nvim',
+    requires = {
+      'nvim-lua/plenary.nvim'
+    },
+    -- tag = 'release' -- To use the latest release
+  }
+
+  use "lukas-reineke/indent-blankline.nvim"
+
 end)
