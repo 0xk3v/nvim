@@ -64,11 +64,11 @@ indent_blankline.setup({
 	show_current_context = true,
 	show_current_context_start = true,
 	char_highlight_list = {
-	  "IndentBlanklineIndent1",
-	  "IndentBlanklineIndent2",
-	  "IndentBlanklineIndent3",
-	  "IndentBlanklineIndent3",
-      "IndentBlanklineIndent5",
+		"IndentBlanklineIndent1",
+		"IndentBlanklineIndent2",
+		"IndentBlanklineIndent3",
+		"IndentBlanklineIndent3",
+		"IndentBlanklineIndent5",
 	},
 })
 
