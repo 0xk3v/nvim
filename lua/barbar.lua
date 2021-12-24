@@ -8,10 +8,10 @@ map('n', '<A-.>', ':BufferNext<CR>', opts)
 map('n', '<A-<>', ':BufferMovePrevious<CR>', opts)
 map('n', '<A->>', ' :BufferMoveNext<CR>', opts)
 -- Goto buffer in position...
-map('n', '<A-1>', ':BufferGoto 1<CR>', opts)
-map('n', '<A-2>', ':BufferGoto 2<CR>', opts)
-map('n', '<A-3>', ':BufferGoto 3<CR>', opts)
-map('n', '<A-4>', ':BufferGoto 4<CR>', opts)
+map('n', '<C-1>', ':BufferGoto 1<CR>', opts)
+map('n', '<C-2>', ':BufferGoto 2<CR>', opts)
+map('n', '<C-3>', ':BufferGoto 3<CR>', opts)
+map('n', '<C-4>', ':BufferGoto 4<CR>', opts)
 map('n', '<A-5>', ':BufferGoto 5<CR>', opts)
 map('n', '<A-6>', ':BufferGoto 6<CR>', opts)
 map('n', '<A-7>', ':BufferGoto 7<CR>', opts)
@@ -75,8 +75,10 @@ vim.g.bufferline = {
   icon_separator_active = '▎',
   icon_separator_inactive = '▎',
   icon_close_tab = '',
-  icon_close_tab_modified = '●',
+  icon_close_tab_modified = '',
   icon_pinned = '車',
+
+  -- ● for modified tab.
 
   -- If true, new buffers will be inserted at the start/end of the list.
   -- Default is to insert after current buffer.
@@ -84,7 +86,7 @@ vim.g.bufferline = {
   insert_at_start = false,
 
   -- Sets the maximum padding width with which to surround each tab
-  maximum_padding = 1,
+  maximum_padding = 3,
 
   -- Sets the maximum buffer name length.
   maximum_length = 30,

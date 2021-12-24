@@ -1,9 +1,9 @@
 local execute = vim.api.nvim_command
 local fn = vim.fn
 
--- local install_path = fn.stdpath('data')..'/site/pack/packer/start/packer.nvim'
+local install_path = fn.stdpath('data')..'/site/pack/packer/start/packer.nvim'
 
---[[
+---[[
 if fn.empty(fn.glob(install_path)) > 0 then
   execute('!git clone https://github.com/wbthomason/packer.nvim '..install_path)
   execute 'packadd packer.nvim'
@@ -13,34 +13,39 @@ end
 -- This file can be loaded by calling `lua require('plugins')` from your init.vim
 
   return require('packer').startup(function()
-  
+
   -- Packer can manage itself
   use {'wbthomason/packer.nvim', opt = true}
 
-  -- Main Theme
+  -- Themes
   use 'drewtempelmeyer/palenight.vim'
-  use 'pacokwon/onedarkhc.vim'
+  use 'kadekillary/skull-vim'
+  use 'tiagovla/tokyodark.nvim'
 
-  -- Nvim Tree Lua 
+  -- Nvim Tree Lua
   use {
     'kyazdani42/nvim-tree.lua',
     requires = 'kyazdani42/nvim-web-devicons',
     config = function() require'nvim-tree'.setup {} end
   }
-  
+
   -- BarBar
-  use {
+  --[[ use {
     'romgrk/barbar.nvim',
     requires = {'kyazdani42/nvim-web-devicons'}
-  }
+  }]]
+
+  -- using packer.nvim
+  use {'akinsho/bufferline.nvim', requires = 'kyazdani42/nvim-web-devicons'}
+
 
   use 'nvim-treesitter/nvim-treesitter'
   use {'prettier/vim-prettier', run = 'yarn install' }
   use '9mm/vim-closer'
   use 'honza/vim-snippets'
-  
-  -- AirLine 
-  
+
+  -- AirLine
+
   use 'vim-airline/vim-airline'
   use 'vim-airline/vim-airline-themes'
   use 'ryanoasis/vim-devicons'
@@ -54,12 +59,13 @@ end
   use 'peitalin/vim-jsx-typescript'
   use 'mxw/vim-jsx'
   use  {'styled-components/vim-styled-components', branch = 'main'}
-  use 'jparise/vim-graphql' 
+  use 'jparise/vim-graphql'
   use 'othree/yajs.vim'
   use {'autozimu/LanguageClient-neovim', branch = 'next', run = 'bash install.sh'}
   use 'dense-analysis/ale'
   use 'vim-syntastic/syntastic'
   use 'maxmellon/vim-jsx-pretty'
+  use 'chemzqm/vim-jsx-improve'
 
   -- HTML & CSS Support
 
@@ -68,25 +74,28 @@ end
   use 'mattn/emmet-vim'
   use 'hail2u/vim-css3-syntax'
   use 'gko/vim-coloresque'
+  use 'AndrewRadev/tagalong.vim'
 
   -- COC Support
-  
+
   use {'neoclide/coc.nvim', branch = 'release'}
 
   -- Python Support
 
-  use 'numirias/semshi'
+  -- use 'numirias/semshi'
   use {'python-mode/python-mode',  branch = 'develop' }
   use 'sheerun/vim-polyglot'
   use 'vim-scripts/indentpython.vim'
+  use 'vim-python/python-syntax'
 
   -- Cool Plugins
 
   use 'jiangmiao/auto-pairs'
   use 'tpope/vim-commentary'
+  use 'Shougo/deoplete.nvim'
 
   -- Terminal Support
-  
+
   use {
       's1n7ax/nvim-terminal',
       config = function()
@@ -97,4 +106,17 @@ end
 
   use 'airblade/vim-rooter'
 
+  -- C# Support
+
+  use 'OmniSharp/omnisharp-vim'
+  use 'liuchengxu/vim-clap'
+
+  -- Dashboard
+  use {
+    'goolord/alpha-nvim',
+    config = function ()
+        require'alpha'.setup(require'alpha.themes.dashboard'.opts)
+    end
+  }
+  use 'glepnir/dashboard-nvim'
 end)

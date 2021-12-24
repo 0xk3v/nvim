@@ -1,11 +1,16 @@
+
 -- Importing Configurations
 
 require('plugins')
+require('nvim-config')
 require('nvim-tree')
-require('barbar')
+require('tree')
+require('bufferline-config')
 require('keymappings')
 require('opts')
 require('term-config')
 
 -- Theme Settings
-vim.g.colors_name = 'palenight'
+local editor = vim.g
+editor.colors_name = 'tokyodark'
+editor.airline_theme = 'google_dark'
