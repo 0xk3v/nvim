@@ -89,15 +89,7 @@ end
   use 'Shougo/deoplete.nvim'
 
   -- Terminal Support
-
-  use {
-      's1n7ax/nvim-terminal',
-      config = function()
-          vim.o.hidden = true
-          require('nvim-terminal').setup()
-      end,
-  }
-
+  use {"akinsho/toggleterm.nvim"}
   use 'airblade/vim-rooter'
 
   -- C# Support
