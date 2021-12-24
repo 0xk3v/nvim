@@ -9,6 +9,8 @@ require('barbar')
 require('keymappings')
 require('opts')
 require('term-config')
+
 -- Theme Settings
-vim.g.colors_name = 'tokyodark'
-vim.g.airline_theme = 'google_dark'
+local editor = vim.g
+editor.colors_name = 'tokyodark'
+editor.airline_theme = 'google_dark'
