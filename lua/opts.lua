@@ -15,7 +15,7 @@ set.splitright = true
 vim.wo.number = true
 vim.o.background = 'dark'
 vim.cmd 'set cursorline'
-
+vim.g.python_highlight_all = true
 
 -- ESLint Configs
 
