@@ -13,7 +13,7 @@ end
 -- This file can be loaded by calling `lua require('plugins')` from your init.vim
 
   return require('packer').startup(function()
-  
+
   -- Packer can manage itself
   use {'wbthomason/packer.nvim', opt = true}
 
@@ -22,26 +22,30 @@ end
   use 'kadekillary/skull-vim'
   use 'tiagovla/tokyodark.nvim'
 
-  -- Nvim Tree Lua 
+  -- Nvim Tree Lua
   use {
     'kyazdani42/nvim-tree.lua',
     requires = 'kyazdani42/nvim-web-devicons',
     config = function() require'nvim-tree'.setup {} end
   }
-  
+
   -- BarBar
-  use {
+  --[[ use {
     'romgrk/barbar.nvim',
     requires = {'kyazdani42/nvim-web-devicons'}
-  }
+  }]]
+
+  -- using packer.nvim
+  use {'akinsho/bufferline.nvim', requires = 'kyazdani42/nvim-web-devicons'}
+
 
   use 'nvim-treesitter/nvim-treesitter'
   use {'prettier/vim-prettier', run = 'yarn install' }
   use '9mm/vim-closer'
   use 'honza/vim-snippets'
-  
-  -- AirLine 
-  
+
+  -- AirLine
+
   use 'vim-airline/vim-airline'
   use 'vim-airline/vim-airline-themes'
   use 'ryanoasis/vim-devicons'
@@ -55,7 +59,7 @@ end
   use 'peitalin/vim-jsx-typescript'
   use 'mxw/vim-jsx'
   use  {'styled-components/vim-styled-components', branch = 'main'}
-  use 'jparise/vim-graphql' 
+  use 'jparise/vim-graphql'
   use 'othree/yajs.vim'
   use {'autozimu/LanguageClient-neovim', branch = 'next', run = 'bash install.sh'}
   use 'dense-analysis/ale'
@@ -73,7 +77,7 @@ end
   use 'AndrewRadev/tagalong.vim'
 
   -- COC Support
-  
+
   use {'neoclide/coc.nvim', branch = 'release'}
 
   -- Python Support
@@ -91,7 +95,7 @@ end
   use 'Shougo/deoplete.nvim'
 
   -- Terminal Support
-  
+
   use {
       's1n7ax/nvim-terminal',
       config = function()
@@ -103,10 +107,10 @@ end
   use 'airblade/vim-rooter'
 
   -- C# Support
-  
+
   use 'OmniSharp/omnisharp-vim'
   use 'liuchengxu/vim-clap'
-  
+
   -- Dashboard
   use {
     'goolord/alpha-nvim',
