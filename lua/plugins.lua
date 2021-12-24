@@ -33,7 +33,7 @@ end
   use {'akinsho/bufferline.nvim', requires = 'kyazdani42/nvim-web-devicons'}
 
 
-  use 'nvim-treesitter/nvim-treesitter'
+--  use 'nvim-treesitter/nvim-treesitter'
   use {'prettier/vim-prettier', run = 'yarn install' }
   use '9mm/vim-closer'
   use 'honza/vim-snippets'
