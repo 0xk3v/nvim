@@ -59,8 +59,11 @@ packer.init {
   -- BufferLine
   use {'akinsho/bufferline.nvim', requires = 'kyazdani42/nvim-web-devicons'}
 
+  -- Impatient
+  use 'lewis6991/impatient.nvim'
+
   -- Indentation Manager
-  -- use 'lukas-reineke/indent-blankline.nvim'
+  use 'lukas-reineke/indent-blankline.nvim'
 
   use {'prettier/vim-prettier', run = 'yarn install' }
   use '9mm/vim-closer'
