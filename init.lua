@@ -1,8 +1,7 @@
 -- Importing Configurations
 
 require('plugins')
-require('nvim-config')
-require('nvim-tree')
+require('nvim-tree-config')
 require('bufferline-config')
 require('keymappings')
 require('opts')
