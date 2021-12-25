@@ -1,14 +1,41 @@
-local execute = vim.api.nvim_command
 local fn = vim.fn
 
-local install_path = fn.stdpath('data')..'/site/pack/packer/start/packer.nvim'
-
----[[
+-- Automatically install packer
+local install_path = fn.stdpath "data" .. "/site/pack/packer/start/packer.nvim"
 if fn.empty(fn.glob(install_path)) > 0 then
-  execute('!git clone https://github.com/wbthomason/packer.nvim '..install_path)
-  execute 'packadd packer.nvim'
+  PACKER_BOOTSTRAP = fn.system {
+    "git",
+    "clone",
+    "--depth",
+    "1",
+    "https://github.com/wbthomason/packer.nvim",
+    install_path,
+  }
+  print "Installing packer close and reopen Neovim..."
+  vim.cmd [[packadd packer.nvim]]
 end
---]]
+
+-- Autocommand that reloads neovim whenever you save the plugins.lua file
+vim.cmd [[
+  augroup packer_user_config
+    autocmd!
+    autocmd BufWritePost plugins.lua source <afile> | PackerSync
+  augroup end
+]]
+
+local status_ok, packer = pcall(require, "packer")
+if not status_ok then
+  return
+end
+
+-- Have packer use a popup window
+packer.init {
+  display = {
+    open_fn = function()
+      return require("packer.util").float { border = "rounded" }
+    end,
+  },
+}
 
 -- This file can be loaded by calling `lua require('plugins')` from your init.vim
 
@@ -29,11 +56,12 @@ end
     config = function() require'nvim-tree'.setup {} end
   }
 
-  -- using packer.nvim
+  -- BufferLine
   use {'akinsho/bufferline.nvim', requires = 'kyazdani42/nvim-web-devicons'}
 
+  -- Indentation Manager
+  use 'lukas-reineke/indent-blankline.nvim'
 
---  use 'nvim-treesitter/nvim-treesitter'
   use {'prettier/vim-prettier', run = 'yarn install' }
   use '9mm/vim-closer'
   use 'honza/vim-snippets'
@@ -98,12 +126,12 @@ end
   use 'liuchengxu/vim-clap'
 
   -- Dashboard
-  use {
-    'goolord/alpha-nvim',
-    config = function ()
-        require'alpha'.setup(require'alpha.themes.dashboard'.opts)
-    end
-  }
+  -- use {
+  --   'goolord/alpha-nvim',
+  --   config = function ()
+  --       require'alpha'.setup(require'alpha.themes.dashboard'.opts)
+  --   end
+  -- }
   use 'glepnir/dashboard-nvim'
 
   -- Git Support
@@ -114,7 +142,5 @@ end
     },
     -- tag = 'release' -- To use the latest release
   }
-
-  use "lukas-reineke/indent-blankline.nvim"
 
 end)

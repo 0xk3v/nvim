@@ -94,6 +94,11 @@ _G.packer_plugins = {
     path = "/home/mint/.local/share/nvim/site/pack/packer/start/coc.nvim",
     url = "https://github.com/neoclide/coc.nvim"
   },
+  ["dashboard-nvim"] = {
+    loaded = true,
+    path = "/home/mint/.local/share/nvim/site/pack/packer/start/dashboard-nvim",
+    url = "https://github.com/glepnir/dashboard-nvim"
+  },
   ["deoplete.nvim"] = {
     loaded = true,
     path = "/home/mint/.local/share/nvim/site/pack/packer/start/deoplete.nvim",
@@ -113,11 +118,6 @@ _G.packer_plugins = {
     loaded = true,
     path = "/home/mint/.local/share/nvim/site/pack/packer/start/html5.vim",
     url = "https://github.com/othree/html5.vim"
-  },
-  ["indent-blankline.nvim"] = {
-    loaded = true,
-    path = "/home/mint/.local/share/nvim/site/pack/packer/start/indent-blankline.nvim",
-    url = "https://github.com/lukas-reineke/indent-blankline.nvim"
   },
   ["indentpython.vim"] = {
     loaded = true,
