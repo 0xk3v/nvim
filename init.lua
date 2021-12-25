@@ -9,6 +9,7 @@ require('opts')
 require('term-config')
 require('git-config')
 require('indentline')
+require('dash-config')
 
 -- Theme Settings
 local editor = vim.g
