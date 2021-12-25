@@ -7,7 +7,7 @@ require('keymappings')
 require('opts')
 require('term-config')
 require('git-config')
-require('indentline')
+-- require('indent-config')
 require('dash-config')
 
 -- Theme Settings
