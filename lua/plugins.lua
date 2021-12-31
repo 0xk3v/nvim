@@ -146,4 +146,6 @@ packer.init {
     -- tag = 'release' -- To use the latest release
   }
 
+  use 'famiu/bufdelete.nvim'
+
 end)
