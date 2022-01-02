@@ -25,4 +25,4 @@ vim.cmd 'nnoremap <C-L> <C-W><C-L>'
 vim.cmd 'nnoremap <C-H> <C-W><C-H>'
 
 
-vim.cmd 'source ~/.config/nvim/lua/user/coc-config.vim'
+-- vim.cmd 'source ~/.config/nvim/lua/user/coc-config.vim'

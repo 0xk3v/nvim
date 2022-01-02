@@ -205,6 +205,16 @@ _G.packer_plugins = {
     path = "/home/mint/.local/share/nvim/site/pack/packer/start/nvim-tree.lua",
     url = "https://github.com/kyazdani42/nvim-tree.lua"
   },
+  ["nvim-treesitter"] = {
+    loaded = true,
+    path = "/home/mint/.local/share/nvim/site/pack/packer/start/nvim-treesitter",
+    url = "https://github.com/nvim-treesitter/nvim-treesitter"
+  },
+  ["nvim-ts-context-commentstring"] = {
+    loaded = true,
+    path = "/home/mint/.local/share/nvim/site/pack/packer/start/nvim-ts-context-commentstring",
+    url = "https://github.com/JoosepAlviste/nvim-ts-context-commentstring"
+  },
   ["nvim-web-devicons"] = {
     loaded = true,
     path = "/home/mint/.local/share/nvim/site/pack/packer/start/nvim-web-devicons",
@@ -271,6 +281,11 @@ _G.packer_plugins = {
     path = "/home/mint/.local/share/nvim/site/pack/packer/start/tagalong.vim",
     url = "https://github.com/AndrewRadev/tagalong.vim"
   },
+  ["telescope.nvim"] = {
+    loaded = true,
+    path = "/home/mint/.local/share/nvim/site/pack/packer/start/telescope.nvim",
+    url = "https://github.com/nvim-telescope/telescope.nvim"
+  },
   ["toggleterm.nvim"] = {
     loaded = true,
     path = "/home/mint/.local/share/nvim/site/pack/packer/start/toggleterm.nvim",
@@ -286,6 +301,11 @@ _G.packer_plugins = {
     path = "/home/mint/.local/share/nvim/site/pack/packer/start/typescript-vim",
     url = "https://github.com/leafgarland/typescript-vim"
   },
+  ultisnips = {
+    loaded = true,
+    path = "/home/mint/.local/share/nvim/site/pack/packer/start/ultisnips",
+    url = "https://github.com/SirVer/ultisnips"
+  },
   ["vim-airline"] = {
     loaded = true,
     path = "/home/mint/.local/share/nvim/site/pack/packer/start/vim-airline",
@@ -295,11 +315,6 @@ _G.packer_plugins = {
     loaded = true,
     path = "/home/mint/.local/share/nvim/site/pack/packer/start/vim-airline-themes",
     url = "https://github.com/vim-airline/vim-airline-themes"
-  },
-  ["vim-clap"] = {
-    loaded = true,
-    path = "/home/mint/.local/share/nvim/site/pack/packer/start/vim-clap",
-    url = "https://github.com/liuchengxu/vim-clap"
   },
   ["vim-closer"] = {
     loaded = true,

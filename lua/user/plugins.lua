@@ -118,9 +118,10 @@ packer.init {
   use "hrsh7th/cmp-nvim-lsp" 
 
   use "L3MON4D3/LuaSnip" --snippet engine
-  use "rafamadriz/friendly-snippets" 
+  use "rafamadriz/friendly-snippets"
+  use 'SirVer/ultisnips'
 
-  -- Python Support
+-- Python Support
 
   use {'python-mode/python-mode',  branch = 'develop' }
   use 'sheerun/vim-polyglot'
@@ -140,7 +141,7 @@ packer.init {
   -- C# Support
 
   use 'OmniSharp/omnisharp-vim'
-  use 'liuchengxu/vim-clap'
+--  use 'liuchengxu/vim-clap'
 
   -- Dashboard
   use 'glepnir/dashboard-nvim'
@@ -159,5 +160,21 @@ packer.init {
   use "ahmedkhalf/project.nvim"
   use "antoinemadec/FixCursorHold.nvim" -- This is needed to fix lsp doc highlight
   use 'famiu/bufdelete.nvim'
+  use {
+  'nvim-telescope/telescope.nvim',
+  requires = { {'nvim-lua/plenary.nvim'} }
+  }
 
+  -- Treesitter
+  use {
+    "nvim-treesitter/nvim-treesitter",
+    run = ":TSUpdate",
+  }
+
+  use "JoosepAlviste/nvim-ts-context-commentstring"
+
+  -- End of Plugins
+  if PACKER_BOOTSTRAP then
+    require("packer").sync()
+  end
 end)

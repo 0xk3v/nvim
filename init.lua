@@ -10,8 +10,6 @@ require('user.indent-config')
 require('user.dash-config')
 require('user.cmp')
 require('user.lsp')
-
--- Theme Settings
-local editor = vim.g
-editor.colors_name = 'tokyodark'
-editor.airline_theme = 'google_dark'
+require("user.colorschemes")
+require("user.telescope")
+require("user.treesitter")
