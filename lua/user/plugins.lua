@@ -92,6 +92,10 @@ packer.init {
   use 'maxmellon/vim-jsx-pretty'
   use 'chemzqm/vim-jsx-improve'
 
+  -- Js & React snippets
+  use 'epilande/vim-react-snippets'
+  use 'epilande/vim-es2015-snippets'
+
   -- HTML & CSS Support
 
   use 'othree/html5.vim'

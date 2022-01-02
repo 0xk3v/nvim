@@ -341,6 +341,11 @@ _G.packer_plugins = {
     path = "/home/mint/.local/share/nvim/site/pack/packer/start/vim-devicons",
     url = "https://github.com/ryanoasis/vim-devicons"
   },
+  ["vim-es2015-snippets"] = {
+    loaded = true,
+    path = "/home/mint/.local/share/nvim/site/pack/packer/start/vim-es2015-snippets",
+    url = "https://github.com/epilande/vim-es2015-snippets"
+  },
   ["vim-graphql"] = {
     loaded = true,
     path = "/home/mint/.local/share/nvim/site/pack/packer/start/vim-graphql",
@@ -385,6 +390,11 @@ _G.packer_plugins = {
     loaded = true,
     path = "/home/mint/.local/share/nvim/site/pack/packer/start/vim-prettier",
     url = "https://github.com/prettier/vim-prettier"
+  },
+  ["vim-react-snippets"] = {
+    loaded = true,
+    path = "/home/mint/.local/share/nvim/site/pack/packer/start/vim-react-snippets",
+    url = "https://github.com/epilande/vim-react-snippets"
   },
   ["vim-rooter"] = {
     loaded = true,
