@@ -102,12 +102,26 @@ packer.init {
   use 'AndrewRadev/tagalong.vim'
 
   -- COC Support
+  -- use {'neoclide/coc.nvim', branch = 'release'
 
-  use {'neoclide/coc.nvim', branch = 'release'}
+  -- LSP Support
+  use "neovim/nvim-lspconfig" -- enable LSP
+  use "williamboman/nvim-lsp-installer" -- simple to use language server installer
+  use "tamago324/nlsp-settings.nvim" -- language server settings defined in json for
+  use "jose-elias-alvarez/null-ls.nvim" -- for formatters and linters
+
+  use "hrsh7th/nvim-cmp" -- The completion plugin
+  use "hrsh7th/cmp-buffer" -- buffer completions
+  use "hrsh7th/cmp-path" -- path completions
+  use "hrsh7th/cmp-cmdline" -- cmdline completions
+  use "saadparwaiz1/cmp_luasnip" -- snippet completions
+  use "hrsh7th/cmp-nvim-lsp" 
+
+  use "L3MON4D3/LuaSnip" --snippet engine
+  use "rafamadriz/friendly-snippets" 
 
   -- Python Support
 
-  -- use 'numirias/semshi'
   use {'python-mode/python-mode',  branch = 'develop' }
   use 'sheerun/vim-polyglot'
   use 'vim-scripts/indentpython.vim'
@@ -129,13 +143,9 @@ packer.init {
   use 'liuchengxu/vim-clap'
 
   -- Dashboard
-  -- use {
-  --   'goolord/alpha-nvim',
-  --   config = function ()
-  --       require'alpha'.setup(require'alpha.themes.dashboard'.opts)
-  --   end
-  -- }
   use 'glepnir/dashboard-nvim'
+
+  use {'nvim-lua/popup.nvim', requires = {'nvim-lua/plenary.nvim'},}
 
   -- Git Support
   use {
@@ -145,7 +155,9 @@ packer.init {
     },
     -- tag = 'release' -- To use the latest release
   }
-
+  -- Other Plugins
+  use "ahmedkhalf/project.nvim"
+  use "antoinemadec/FixCursorHold.nvim" -- This is needed to fix lsp doc highlight
   use 'famiu/bufdelete.nvim'
 
 end)
