@@ -8,10 +8,15 @@ This is My Nvim Config Files that is written in Lua.
 ├── coc-settings.json
 ├── init.lua
 ├── lua
-│   ├── barbar.lua
+│   ├── bufferline-config.lua
 │   ├── coc-config.vim
-│   ├── compe-config.lua
+│   ├── dash-config.lua
+│   ├── formatting.lua
+│   ├── git-config.lua
+│   ├── impatient-config.lua
+│   ├── indent-config.lua
 │   ├── keymappings.lua
+│   ├── nvim-tree-config.lua
 │   ├── opts.lua
 │   ├── plugins.lua
 │   └── term-config.lua

@@ -1,15 +1,15 @@
 require("formatter").setup {
   filetype = {
-    javascript = {
-      -- prettier
-      function()
-        return {
-          exe = "prettier",
-          args = { "--stdin-filepath", vim.fn.fnameescape(vim.api.nvim_buf_get_name(0)), "--single-quote" },
-          stdin = true,
-        }
-      end,
-    },
+    -- javascript = {
+    --   -- prettier
+    --   function()
+    --     return {
+    --       exe = "prettier",
+    --       args = { "--stdin-filepath", vim.fn.fnameescape(vim.api.nvim_buf_get_name(0)), "--single-quote" },
+    --       stdin = true,
+    --     }
+    --   end,
+    -- },
     sh = {
       -- Shell Script Formatter
       function()
@@ -39,7 +39,7 @@ vim.api.nvim_exec(
   [[
 augroup FormatAutogroup
   autocmd!
-  autocmd BufWritePost *.js,*.jsx,*.rs,*.lua FormatWrite
+  autocmd BufWritePost *.lua,*.sh FormatWrite
 augroup END
 ]],
   true
