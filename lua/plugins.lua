@@ -59,12 +59,18 @@ packer.init {
   -- BufferLine
   use {'akinsho/bufferline.nvim', requires = 'kyazdani42/nvim-web-devicons'}
 
+  -- Impatient
+  use 'lewis6991/impatient.nvim'
+
   -- Indentation Manager
   use 'lukas-reineke/indent-blankline.nvim'
 
   use {'prettier/vim-prettier', run = 'yarn install' }
   use '9mm/vim-closer'
   use 'honza/vim-snippets'
+
+  -- Formatting
+  use 'mhartington/formatter.nvim'
 
   -- AirLine
 
@@ -123,15 +129,10 @@ packer.init {
   -- C# Support
 
   use 'OmniSharp/omnisharp-vim'
-  use 'liuchengxu/vim-clap'
-
-  -- Dashboard
-  -- use {
-  --   'goolord/alpha-nvim',
-  --   config = function ()
-  --       require'alpha'.setup(require'alpha.themes.dashboard'.opts)
-  --   end
-  -- }
+  use {
+    'nvim-telescope/telescope.nvim',
+    requires = { {'nvim-lua/plenary.nvim'} }
+  }
   use 'glepnir/dashboard-nvim'
 
   -- Git Support
@@ -142,5 +143,7 @@ packer.init {
     },
     -- tag = 'release' -- To use the latest release
   }
+
+  use 'famiu/bufdelete.nvim'
 
 end)
