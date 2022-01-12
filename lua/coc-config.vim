@@ -23,7 +23,3 @@ let g:OmniSharp_selector_ui = 'clap'
 " Python Config...
 
 let g:python_highlight_all = 1
-
-" JSX Settings
-
-autocmd BufNewFile,BufRead *.tsx,*.jsx set filetype=typescriptreact
