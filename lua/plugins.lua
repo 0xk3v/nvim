@@ -69,6 +69,9 @@ packer.init {
   use '9mm/vim-closer'
   use 'honza/vim-snippets'
 
+  -- Formatting
+  use 'mhartington/formatter.nvim'
+
   -- AirLine
 
   use 'vim-airline/vim-airline'
@@ -126,15 +129,10 @@ packer.init {
   -- C# Support
 
   use 'OmniSharp/omnisharp-vim'
-  use 'liuchengxu/vim-clap'
-
-  -- Dashboard
-  -- use {
-  --   'goolord/alpha-nvim',
-  --   config = function ()
-  --       require'alpha'.setup(require'alpha.themes.dashboard'.opts)
-  --   end
-  -- }
+  use {
+    'nvim-telescope/telescope.nvim',
+    requires = { {'nvim-lua/plenary.nvim'} }
+  }
   use 'glepnir/dashboard-nvim'
 
   -- Git Support
