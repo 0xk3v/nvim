@@ -1,4 +1,4 @@
-# My Neovim Configurationi in Lua
+# My Neovim Configuration in Lua
 
 This is My Nvim Config Files that is written in Lua.
 
