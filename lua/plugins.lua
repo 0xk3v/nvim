@@ -70,10 +70,8 @@ return require("packer").startup(function()
   use "9mm/vim-closer"
 
   -- Snippets
-  use "epilande/vim-react-snippets"
   use "honza/vim-snippets"
-  use "SirVer/ultisnips"
-  use "epilande/vim-es2015-snippets"
+  use "rafamadriz/friendly-snippets"
 
   -- Formatting
   use "mhartington/formatter.nvim"
@@ -116,7 +114,6 @@ return require("packer").startup(function()
 
   -- Python Support
 
-  -- use 'numirias/semshi'
   use { "python-mode/python-mode", branch = "develop" }
   use "sheerun/vim-polyglot"
   use "vim-scripts/indentpython.vim"
