@@ -119,6 +119,11 @@ _G.packer_plugins = {
     path = "/home/mint/.local/share/nvim/site/pack/packer/start/formatter.nvim",
     url = "https://github.com/mhartington/formatter.nvim"
   },
+  ["friendly-snippets"] = {
+    loaded = true,
+    path = "/home/mint/.local/share/nvim/site/pack/packer/start/friendly-snippets",
+    url = "https://github.com/rafamadriz/friendly-snippets"
+  },
   ["gitsigns.nvim"] = {
     loaded = true,
     path = "/home/mint/.local/share/nvim/site/pack/packer/start/gitsigns.nvim",
@@ -226,11 +231,6 @@ _G.packer_plugins = {
     path = "/home/mint/.local/share/nvim/site/pack/packer/start/typescript-vim",
     url = "https://github.com/leafgarland/typescript-vim"
   },
-  ultisnips = {
-    loaded = true,
-    path = "/home/mint/.local/share/nvim/site/pack/packer/start/ultisnips",
-    url = "https://github.com/SirVer/ultisnips"
-  },
   ["vim-airline"] = {
     loaded = true,
     path = "/home/mint/.local/share/nvim/site/pack/packer/start/vim-airline",
@@ -265,11 +265,6 @@ _G.packer_plugins = {
     loaded = true,
     path = "/home/mint/.local/share/nvim/site/pack/packer/start/vim-devicons",
     url = "https://github.com/ryanoasis/vim-devicons"
-  },
-  ["vim-es2015-snippets"] = {
-    loaded = true,
-    path = "/home/mint/.local/share/nvim/site/pack/packer/start/vim-es2015-snippets",
-    url = "https://github.com/epilande/vim-es2015-snippets"
   },
   ["vim-graphql"] = {
     loaded = true,
@@ -315,11 +310,6 @@ _G.packer_plugins = {
     loaded = true,
     path = "/home/mint/.local/share/nvim/site/pack/packer/start/vim-prettier",
     url = "https://github.com/prettier/vim-prettier"
-  },
-  ["vim-react-snippets"] = {
-    loaded = true,
-    path = "/home/mint/.local/share/nvim/site/pack/packer/start/vim-react-snippets",
-    url = "https://github.com/epilande/vim-react-snippets"
   },
   ["vim-rooter"] = {
     loaded = true,
