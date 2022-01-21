@@ -68,7 +68,12 @@ return require("packer").startup(function()
 
   use { "prettier/vim-prettier", run = "yarn install" }
   use "9mm/vim-closer"
+
+  -- Snippets
+  use "epilande/vim-react-snippets"
   use "honza/vim-snippets"
+  use "SirVer/ultisnips"
+  use "epilande/vim-es2015-snippets"
 
   -- Formatting
   use "mhartington/formatter.nvim"
