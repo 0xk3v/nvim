@@ -13,5 +13,4 @@ require "formatting"
 
 -- Theme Settings
 local editor = vim.g
-editor.colors_name = "tokyodark"
 editor.airline_theme = "google_dark"

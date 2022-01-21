@@ -68,7 +68,10 @@ return require("packer").startup(function()
 
   use { "prettier/vim-prettier", run = "yarn install" }
   use "9mm/vim-closer"
+
+  -- Snippets
   use "honza/vim-snippets"
+  use "rafamadriz/friendly-snippets"
 
   -- Formatting
   use "mhartington/formatter.nvim"
@@ -111,7 +114,6 @@ return require("packer").startup(function()
 
   -- Python Support
 
-  -- use 'numirias/semshi'
   use { "python-mode/python-mode", branch = "develop" }
   use "sheerun/vim-polyglot"
   use "vim-scripts/indentpython.vim"

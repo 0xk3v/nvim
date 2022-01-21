@@ -1,6 +1,6 @@
 require("formatter").setup {
   filetype = {
-    -- javascript = {
+    -- js = {
     --   -- prettier
     --   function()
     --     return {
@@ -23,7 +23,7 @@ require("formatter").setup {
     lua = {
       function()
         return {
-          exe = "stylua",
+          exe = os.getenv "HOME" .. "/.cargo/bin/stylua",
           args = {
             "--config-path " .. os.getenv "HOME" .. "/stylua/stylua.toml",
             "-",
