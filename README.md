@@ -1,6 +1,6 @@
-# My Neovim Configuration in Lua
+# Neovim Configuration in Lua
 
-This is My Nvim Config Files that is written in Lua.
+nvim Config Files written in Lua.
 
 ## Folder Structure :
 
