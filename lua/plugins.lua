@@ -47,6 +47,7 @@ return require("packer").startup(function()
   use "drewtempelmeyer/palenight.vim"
   use "kadekillary/skull-vim"
   use "tiagovla/tokyodark.nvim"
+  use "folke/tokyonight.nvim"
 
   -- Nvim Tree Lua
   use {
@@ -148,4 +149,8 @@ return require("packer").startup(function()
   }
 
   use "famiu/bufdelete.nvim"
+
+  -- Scrollbar Support
+  use { "kevinhwang91/nvim-hlslens" }
+  use "petertriho/nvim-scrollbar"
 end)
