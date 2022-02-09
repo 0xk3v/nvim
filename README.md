@@ -19,6 +19,7 @@ This is My Nvim Config Files that is written in Lua.
 │   ├── nvim-tree-config.lua
 │   ├── opts.lua
 │   ├── plugins.lua
+│   ├── scroll-config.lua
 │   └── term-config.lua
 ├── plugin
 │   └── packer_compiled.lua
