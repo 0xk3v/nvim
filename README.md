@@ -1,6 +1,6 @@
-# Neovim Configuration in Lua
+# My Neovim Configuration in Lua
 
-Nvim Config Files written in Lua.
+This is My Nvim Config Files that is written in Lua.
 
 ## Folder Structure :
 
@@ -19,14 +19,16 @@ Nvim Config Files written in Lua.
 │   ├── nvim-tree-config.lua
 │   ├── opts.lua
 │   ├── plugins.lua
+│   ├── scroll-config.lua
 │   └── term-config.lua
 ├── plugin
 │   └── packer_compiled.lua
 └── README.md
 ```
 
-# Coc Extensions Installed:
+# Coc Extensions Installed
 
 ```
 CocInstall: coc-pylsp coc-cfn-lint coc-css coc-emmet coc-eslint coc-highlight coc-html coc-htmlhint coc-jedi coc-json coc-prettier coc-pyright coc-react-refactor coc-snippets coc-style-helper coc-tsserver coc-vetur coc-omnisharp
 ```
+
