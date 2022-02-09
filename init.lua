@@ -10,6 +10,7 @@ require "git-config"
 require "indent-config"
 require "dash-config"
 require "formatting"
+require "scroll-config"
 
 -- Theme Settings
 local editor = vim.g
