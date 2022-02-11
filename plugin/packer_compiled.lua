@@ -236,6 +236,11 @@ _G.packer_plugins = {
     path = "/home/mint/.local/share/nvim/site/pack/packer/start/tokyodark.nvim",
     url = "https://github.com/tiagovla/tokyodark.nvim"
   },
+  ["tokyonight.nvim"] = {
+    loaded = true,
+    path = "/home/mint/.local/share/nvim/site/pack/packer/start/tokyonight.nvim",
+    url = "https://github.com/folke/tokyonight.nvim"
+  },
   ["typescript-vim"] = {
     loaded = true,
     path = "/home/mint/.local/share/nvim/site/pack/packer/start/typescript-vim",
