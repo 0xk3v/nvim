@@ -116,7 +116,7 @@ return require("packer").startup(function()
   -- Python Support
 
   use { "python-mode/python-mode", branch = "develop" }
-  use "sheerun/vim-polyglot"
+  --  use "sheerun/vim-polyglot"
   use "vim-scripts/indentpython.vim"
   use "vim-python/python-syntax"
 

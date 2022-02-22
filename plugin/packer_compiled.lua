@@ -316,11 +316,6 @@ _G.packer_plugins = {
     path = "/home/mint/.local/share/nvim/site/pack/packer/start/vim-jsx-typescript",
     url = "https://github.com/peitalin/vim-jsx-typescript"
   },
-  ["vim-polyglot"] = {
-    loaded = true,
-    path = "/home/mint/.local/share/nvim/site/pack/packer/start/vim-polyglot",
-    url = "https://github.com/sheerun/vim-polyglot"
-  },
   ["vim-prettier"] = {
     loaded = true,
     path = "/home/mint/.local/share/nvim/site/pack/packer/start/vim-prettier",
