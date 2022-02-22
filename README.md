@@ -28,7 +28,8 @@ This is My Nvim Config Files that is written in Lua.
 
 # Coc Extensions Installed
 
-```CocInstall coc-vetur coc-tsserver coc-sh coc-rome coc-react-refactor coc-pyright coc-omnisharp coc-lua coc-json coc-jedi coc-style-helper coc-snippets coc-prettier coc-htmlhint coc-html-css-support coc-html coc-highlight coc-eslint coc-emmet coc-css coc-cnf-lint coc-pylsp friendly-snippets
+```
+CocInstall coc-vetur coc-tsserver coc-sh coc-rome coc-react-refactor coc-pyright coc-omnisharp coc-lua coc-json coc-jedi coc-style-helper coc-snippets coc-prettier coc-htmlhint coc-html-css-support coc-html coc-highlight coc-eslint coc-emmet coc-css coc-cnf-lint coc-pylsp friendly-snippets
 ```
 
 
