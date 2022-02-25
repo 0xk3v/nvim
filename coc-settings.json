@@ -21,5 +21,6 @@
   "omnisharp.version": "v1.37.3",
   "omnisharp.trace.server": "information",
   "omnisharp.debug.server": true,
-  "Lua.diagnostics.globals": ["vim", "use"]
+  "Lua.diagnostics.globals": ["vim", "use"],
+  "javascript.suggestionActions.enabled": false
 }
