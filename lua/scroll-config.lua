@@ -1,6 +1,6 @@
 local colors = require("tokyonight.colors").setup()
 
-require("scrollbar").setup {
+require("scrollbar").setup({
   show = true,
   handle = {
     text = " ",
@@ -38,4 +38,4 @@ require("scrollbar").setup {
     diagnostic = true,
     search = false, -- Requires hlslens to be loaded
   },
-}
+})

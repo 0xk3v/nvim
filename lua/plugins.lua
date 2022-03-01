@@ -153,4 +153,10 @@ return require("packer").startup(function()
   -- Scrollbar Support
   use { "kevinhwang91/nvim-hlslens" }
   use "petertriho/nvim-scrollbar"
+
+  -- TreeSitter
+      use {
+        'nvim-treesitter/nvim-treesitter',
+        run = ':TSUpdate'
+    }
 end)

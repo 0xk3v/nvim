@@ -33,7 +33,7 @@ end
 
 local tree_cb = nvim_tree_config.nvim_tree_callback
 
-nvim_tree.setup {
+nvim_tree.setup({
   disable_netrw = true,
   hijack_netrw = true,
   open_on_setup = false,
@@ -86,9 +86,9 @@ nvim_tree.setup {
     mappings = {
       custom_only = false,
       list = {
-        { key = { "l", "<CR>", "o" }, cb = tree_cb "edit" },
-        { key = "h", cb = tree_cb "close_node" },
-        { key = "v", cb = tree_cb "vsplit" },
+        { key = { "l", "<CR>", "o" }, cb = tree_cb("edit") },
+        { key = "h", cb = tree_cb("close_node") },
+        { key = "v", cb = tree_cb("vsplit") },
       },
     },
     number = false,
@@ -109,18 +109,17 @@ nvim_tree.setup {
     folder_arrows = 1,
     tree_width = 30,
   },
-}
+})
 
-
-local tree ={}
-tree.open = function ()
-   require'bufferline.state'.set_offset(31, 'FileTree')
-   require'nvim-tree'.find_file(true)
+local tree = {}
+tree.open = function()
+  require("bufferline.state").set_offset(31, "FileTree")
+  require("nvim-tree").find_file(true)
 end
 
-tree.close = function ()
-   require'bufferline.state'.set_offset(0)
-   require'nvim-tree'.close()
+tree.close = function()
+  require("bufferline.state").set_offset(0)
+  require("nvim-tree").close()
 end
 
 return tree
