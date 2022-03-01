@@ -19,12 +19,12 @@ map("n", "<C-k>", "<C-w>k", default_opts)
 map("n", "<C-l>", "<C-w>l", default_opts)
 
 -- Splitting
-vim.cmd "nnoremap <C-J> <C-W><C-J>"
-vim.cmd "nnoremap <C-K> <C-W><C-K>"
-vim.cmd "nnoremap <C-L> <C-W><C-L>"
-vim.cmd "nnoremap <C-H> <C-W><C-H>"
+vim.cmd("nnoremap <C-J> <C-W><C-J>")
+vim.cmd("nnoremap <C-K> <C-W><C-K>")
+vim.cmd("nnoremap <C-L> <C-W><C-L>")
+vim.cmd("nnoremap <C-H> <C-W><C-H>")
 
 local glob = vim.g
 glob.UltiSnipsExpandTrigger = "<C-l>"
 
-vim.cmd "source ~/.config/nvim/lua/coc-config.vim"
+vim.cmd("source ~/.config/nvim/lua/coc-config.vim")

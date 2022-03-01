@@ -1,4 +1,4 @@
-require("formatter").setup {
+require("formatter").setup({
   filetype = {
     -- js = {
     --   -- prettier
@@ -23,9 +23,9 @@ require("formatter").setup {
     lua = {
       function()
         return {
-          exe = os.getenv "HOME" .. "/.cargo/bin/stylua",
+          exe = os.getenv("HOME") .. "/.cargo/bin/stylua",
           args = {
-            "--config-path " .. os.getenv "HOME" .. "/stylua/stylua.toml",
+            "--config-path " .. os.getenv("HOME") .. "/stylua/stylua.toml",
             "-",
           },
           stdin = true,
@@ -33,7 +33,7 @@ require("formatter").setup {
       end,
     },
   },
-}
+})
 
 vim.api.nvim_exec(
   [[
