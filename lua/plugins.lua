@@ -79,8 +79,12 @@ return require("packer").startup(function()
 
   -- AirLine
 
-  use("vim-airline/vim-airline")
-  use("vim-airline/vim-airline-themes")
+  use({
+    "nvim-lualine/lualine.nvim",
+    requires = { "kyazdani42/nvim-web-devicons", opt = true },
+  })
+  -- use("vim-airline/vim-airline")
+  -- use("vim-airline/vim-airline-themes")
   use("ryanoasis/vim-devicons")
   use("kyazdani42/nvim-web-devicons")
 
@@ -154,6 +158,8 @@ return require("packer").startup(function()
   use({ "kevinhwang91/nvim-hlslens" })
   use("petertriho/nvim-scrollbar")
 
+  -- Notification Support
+  use({ "rcarriga/nvim-notify" })
   -- TreeSitter
   use({
     "nvim-treesitter/nvim-treesitter",
