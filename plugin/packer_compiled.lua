@@ -159,6 +159,11 @@ _G.packer_plugins = {
     path = "/home/mint/.local/share/nvim/site/pack/packer/start/nvim-hlslens",
     url = "https://github.com/kevinhwang91/nvim-hlslens"
   },
+  ["nvim-notify"] = {
+    loaded = true,
+    path = "/home/mint/.local/share/nvim/site/pack/packer/start/nvim-notify",
+    url = "https://github.com/rcarriga/nvim-notify"
+  },
   ["nvim-scrollbar"] = {
     loaded = true,
     path = "/home/mint/.local/share/nvim/site/pack/packer/start/nvim-scrollbar",

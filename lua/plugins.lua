@@ -158,6 +158,8 @@ return require("packer").startup(function()
   use({ "kevinhwang91/nvim-hlslens" })
   use("petertriho/nvim-scrollbar")
 
+  -- Notification Support
+  use({ "rcarriga/nvim-notify" })
   -- TreeSitter
   use({
     "nvim-treesitter/nvim-treesitter",

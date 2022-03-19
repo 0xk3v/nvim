@@ -17,3 +17,4 @@ require("lualine-config")
 -- Theme Settings
 local editor = vim.g
 editor.airline_theme = "google_dark"
+vim.notify = require("notify")
