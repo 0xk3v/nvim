@@ -2,7 +2,7 @@
 
 This is My Nvim Config Files that is written in Lua.
 
-## Folder Structure :
+## Project Folder Structure :
 
 ```
 ├── coc-settings.json
