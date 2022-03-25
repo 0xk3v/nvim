@@ -78,13 +78,13 @@ return require("packer").startup(function()
   use("mhartington/formatter.nvim")
 
   -- AirLine
-
-  use({
-    "nvim-lualine/lualine.nvim",
-    requires = { "kyazdani42/nvim-web-devicons", opt = true },
-  })
-  -- use("vim-airline/vim-airline")
-  -- use("vim-airline/vim-airline-themes")
+  -- use({
+  --   "nvim-lualine/lualine.nvim",
+  --   requires = { "kyazdani42/nvim-web-devicons", opt = true },
+  -- })
+  --
+  use("vim-airline/vim-airline")
+  use("vim-airline/vim-airline-themes")
   use("ryanoasis/vim-devicons")
   use("kyazdani42/nvim-web-devicons")
 

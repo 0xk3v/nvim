@@ -149,11 +149,6 @@ _G.packer_plugins = {
     path = "/home/mint/.local/share/nvim/site/pack/packer/start/indentpython.vim",
     url = "https://github.com/vim-scripts/indentpython.vim"
   },
-  ["lualine.nvim"] = {
-    loaded = true,
-    path = "/home/mint/.local/share/nvim/site/pack/packer/start/lualine.nvim",
-    url = "https://github.com/nvim-lualine/lualine.nvim"
-  },
   ["nvim-hlslens"] = {
     loaded = true,
     path = "/home/mint/.local/share/nvim/site/pack/packer/start/nvim-hlslens",
@@ -260,6 +255,16 @@ _G.packer_plugins = {
     loaded = true,
     path = "/home/mint/.local/share/nvim/site/pack/packer/start/typescript-vim",
     url = "https://github.com/leafgarland/typescript-vim"
+  },
+  ["vim-airline"] = {
+    loaded = true,
+    path = "/home/mint/.local/share/nvim/site/pack/packer/start/vim-airline",
+    url = "https://github.com/vim-airline/vim-airline"
+  },
+  ["vim-airline-themes"] = {
+    loaded = true,
+    path = "/home/mint/.local/share/nvim/site/pack/packer/start/vim-airline-themes",
+    url = "https://github.com/vim-airline/vim-airline-themes"
   },
   ["vim-closer"] = {
     loaded = true,
