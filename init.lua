@@ -12,7 +12,6 @@ require("dash-config")
 require("formatting")
 require("scroll-config")
 require("tree-sitter")
-require("lualine-config")
 
 -- Theme Settings
 local editor = vim.g
