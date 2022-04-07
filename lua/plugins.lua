@@ -165,4 +165,6 @@ return require("packer").startup(function()
     "nvim-treesitter/nvim-treesitter",
     run = ":TSUpdate",
   })
+  -- Live Server
+  use({ "turbio/bracey.vim" })
 end)
