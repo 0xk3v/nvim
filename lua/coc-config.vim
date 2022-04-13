@@ -50,5 +50,3 @@ noremap g# g#<Cmd>lua require('hlslens').start()<CR>
 
 " use : instead of <Cmd>
 nnoremap <silent> <leader>l :noh<CR>
-
-" set term=screen-256color
