@@ -25,7 +25,7 @@ let g:ale_linters = {
 \ 'cs': ['OmniSharp']
 \}
 
-colorscheme tokyodark
+colorscheme tokyonight
 
 let g:syntastic_cs_checkers = ['code_checker']
 let g:OmniSharp_selector_ui = 'clap'
