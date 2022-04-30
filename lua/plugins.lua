@@ -48,6 +48,7 @@ return require("packer").startup(function()
   use("kadekillary/skull-vim")
   use("tiagovla/tokyodark.nvim")
   use("folke/tokyonight.nvim")
+  use("projekt0n/github-nvim-theme")
 
   -- Nvim Tree Lua
   use({
@@ -167,5 +168,4 @@ return require("packer").startup(function()
   })
   -- Live Server
   use({ "turbio/bracey.vim" })
-
 end)
